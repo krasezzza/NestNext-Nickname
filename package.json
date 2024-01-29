@@ -1,0 +1,18 @@
+{
+  "name": "nestnext-nickname",
+  "version": "1.0.0",
+  "description": "Nest/Next sample app for registering nicknames",
+  "main": "index.js",
+  "scripts": {
+    "fe-start": "npm run dev --prefix frontend",
+    "be-start": "npm run start:dev --prefix backend",
+    "be-test": "npm run test --prefix backend",
+    "be-tcov": "npm run test:cov --prefix backend",
+    "dev": "concurrently --kill-others-on-fail 'npm run be-start' 'npm run fe-start'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
